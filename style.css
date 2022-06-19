@@ -1,0 +1,14 @@
+body {
+    background-color: blue;
+}
+
+.box {
+    background-color: white;
+    display: grid;
+    align-self: center;
+    justify-self: normal center;
+}
+
+.box table {
+    margin-top: 40px;
+}

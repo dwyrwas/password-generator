@@ -1,12 +1,13 @@
-function getRandInt(min, max) {
-    return Math.floor(Math.random() * (max-min + 1)) + min;
-};
+var password = document.getElementById('password');
 
-const password = (passwordLength) => {
-    let newPasswordArr = [];
-    for (let i = 0; i < passwordLength; i++) {
-        newPasswordArr.push(String.fromCharCode(getRandInt(1, 95)));
+function generatePassword(){
+    var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var passwordLength = 16;
+    var password = "";
+
+    for (let i =0; i <passwordLength; i++) {
+        let randnum = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randnum, randnum+1);
     }
-    const newPassword = newPasswordArr.join('');
-    return newPassword;
-};
+    document.getElementById('password').value = password;
+}

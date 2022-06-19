@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link type="stylesheet" href="style.css">
-    <script href="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1 class="title">Password Generator</h1>
-    <p>Please enter the desired length of your random password</p>
-    <input type="text">
-    <h2 class="password">Password: ${password}</h2>
-    <input type="submit">
+    <div class="box">
+        <h2>Random Password Generator</h2>
+        <input type="text" name="" placeholder="Create Password" id="password" readonly>
+        <table>
+            <button id="generate" class="btn1" onclick="generatePassword()">Generate</button>
+        </table>
+    </div>
 </body>
 </html>
